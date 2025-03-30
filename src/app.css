@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@import '@skeletonlabs/skeleton';
+@import '@skeletonlabs/skeleton/optional/presets';
+@import '@skeletonlabs/skeleton/themes/mint';
+@import '@skeletonlabs/skeleton/themes/reign';
+@import '@skeletonlabs/skeleton/themes/wintry';
+@import '@skeletonlabs/skeleton/themes/nouveau';
+
+@source '../node_modules/@skeletonlabs/skeleton-svelte/dist';
+
+@media (min-width: 768px) {
+    .show-small { display: none; }
+    .table-large {
+        width: calc(11/12 * 100%) !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .show-large { display: none; }
+}
